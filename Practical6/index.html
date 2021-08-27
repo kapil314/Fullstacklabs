@@ -1,97 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About div tag</title>
-    <style>
-        *{
-            padding: 0;margin: 0;box-sizing: border-box;
-        }
-        #container{
-            display: inline-flex;
-        }
-        .box{
-            width: 300px;
-            height: 400px;
-            
-            overflow: hidden;
-            border: 2px solid green;
-            margin-bottom: 10px;
-            text-align: justify;
-            padding: 20px;
-            margin-right: 20px;
+    <title>Practical-6</title>
+    <h1 style="color: silver;text-align: center;font-weight: bold;font-size: 50px;">Practical-6 : Create a Card Layout using CSS layout properties.</h1>
 
+    <style>
+        .kapil {
+            width: 300px;
+            height: 460px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: white;
+            margin: 30px;
+            padding-right: 10px;
         }
-        #box1{
-            background-color: yellow;
-        }
-        #box2{
-            background-color: pink;
-        }
-        #box3{
-            background-color: orange;
-        }
-        #box4{
-            background-color: greenyellow;
-        }
-        .box img{
-            width: 100%;
-            height: 150px;
+        
+        .kapil1 {
+            width: 300px;
+            height: 460px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: white;
+            margin: 30px;
             border-radius: 20px;
         }
-        .box h2{
-            text-align: center;
+        
+        .kapil2 {
+            width: 300px;
+            height: 460px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: white;
+            margin: 30px;
+            border-radius: 20px;
         }
-        .mybutton{
+        
+        .kapil3 {
+            width: 300px;
+            height: 460px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: white;
+            margin: 30px;
+            border-radius: 20PX;
+        }
+        
+        #box {
+            background-color: blue;
+            padding-left: 20px;
+        }
+        
+        #container {
+            display: inline-flex;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+        
+        .kapil img {
+            padding: 10px;
+            border-radius: 20px;
+            width: 94%;
+            height: 200px;
+        }
+        
+        .kapil1 img {
+            padding: 10px;
+            border-radius: 20px;
+            width: 94%;
+            height: 200px;
+        }
+        
+        .kapil2 img {
+            padding: 10px;
+            border-radius: 20px;
+            width: 94%;
+            height: 200px;
+        }
+        
+        .kapil3 img {
+            padding: 10px;
+            border-radius: 20px;
+            width: 94%;
+            height: 200px;
+        }
+        
+        .mybutton {
             display: block;
-            margin-top: 10px;
             text-decoration: none;
             color: white;
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: red;
-            padding: 10px 20px;
+            padding: 20px;
+            margin-top: 25px;
             border-radius: 20px;
         }
-        .mybutton:hover{
+        
+        .mybutton:hover {
             background-color: blue;
         }
     </style>
-    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
-<body>
+
+<body style="background-color: grey;">
     <div id="container">
-    <div class="box" id="box1">
-        <div class="image-head"> 
-            <img src="./html.jpeg" alt="">
+        <div class="kapil" id=" box" style="border-radius: 20px;">
+            <div class="image">
+                <img src="./html.jpeg" alt="">
+            </div>
+            <h2 style="text-align: center;margin: 10px;font-size: medium;">Introduction to the HTML</h2>
+            <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as CSS and scripting languages such as JS.
+            </p>
+            <div class="link" style="text-align: center;">
+                <a href="https://en.wikipedia.org/wiki/HTML" class="mybutton">Read more</a>
+            </div>
+
         </div>
-        <h2>This is Heading</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae minus provident praesentium nam asperiores dolores doloremque 
-        </p>
-        <div class="image" style="text-align: center;">
-            <a href="#" class="mybutton" >Read More</a>
-        </div>   
+        <div class="kapil1" id=" box1" style="padding-right: 10x;">
+            <img src="./js.jpeg" alt="">
+            <h2 style="text-align: center;margin: 10px;font-size: medium;">Introduction to the JS</h2>
+            <p>JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax. </p>
+            <div class="link" style="text-align: center;">
+                <a href="https://en.wikipedia.org/wiki/JavaScript" class="mybutton">Read more</a>
+            </div>
+        </div>
+        <div class="kapil2" id=" box2">
+            <div><img src="./css.jpeg" alt=""></div>
+            <h2 style="text-align: center;margin: 10px;font-size: medium;">Introduction to the CSS</h2>
+            <p>CSS(Cascading Style Sheets ) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the WWW.CSS is designed layout, colors.</p>
+            <div class="link" style="text-align: center;">
+                <a href="https://en.wikipedia.org/wiki/CSS" class="mybutton">Read more</a>
+            </div>
+        </div>
+        <div class="kapil3" id=" box3">
+            <div><img src="./bootstrap.jpeg" alt=""></div>
+            <h2 style="text-align: center;margin: 10px;font-size: medium;">Introduction to the BOOTSTRAP</h2>
+
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.It contains CSS- and JS for forms, buttons, navigation, and other interface components.
+            </p>
+            <div class="link" style="text-align: center;">
+                <a href="https://en.wikipedia.org/wiki/BOOTSTRAP" class="mybutton">Read more</a>
+            </div>
+        </div>
     </div>
-    <div class="box" id="box2">
-        <h2>This is Heading</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae minus provident praesentium nam asperiores dolores doloremque facere tenetur iusto obcaecati similique, dolorum labore. Temporibus reiciendis ipsa, voluptas quibusdam molestias iste? Enim, aliquid maiores quidem tempora odio illum, at repellendus fugit tenetur eveniet iste inventore expedita nihil dolor possimus eaque accusantium. Ducimus excepturi modi debitis quaerat est delectus eligendi. Saepe obcaecati incidunt nostrum soluta odio, quia temporibus, nulla atque at, qui libero? Quae ex sit consequuntur nihil saepe dolores et iste minima qui sunt similique quidem at excepturi numquam expedita est aliquid perferendis, voluptatum atque voluptatem nulla maiores. Repudiandae, maxime?
-        </p>
-    </div>
-    <div class="box" id="box3">
-        <h2>This is Heading</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae minus provident praesentium nam asperiores dolores doloremque facere tenetur iusto obcaecati similique, dolorum labore. Temporibus reiciendis ipsa, voluptas quibusdam molestias iste? Enim, aliquid maiores quidem tempora odio illum, at repellendus fugit tenetur eveniet iste inventore expedita nihil dolor possimus eaque accusantium. Ducimus excepturi modi debitis quaerat est delectus eligendi. Saepe obcaecati incidunt nostrum soluta odio, quia temporibus, nulla atque at, qui libero? Quae ex sit consequuntur nihil saepe dolores et iste minima qui sunt similique quidem at excepturi numquam expedita est aliquid perferendis, voluptatum atque voluptatem nulla maiores. Repudiandae, maxime?
-        </p>
-    </div>
-    <div class="box" id="box4">
-        <h2>This is Heading</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae minus provident praesentium nam asperiores dolores doloremque facere tenetur iusto obcaecati similique, dolorum labore. Temporibus reiciendis ipsa, voluptas quibusdam molestias iste? Enim, aliquid maiores quidem tempora odio illum, at repellendus fugit tenetur eveniet iste inventore expedita nihil dolor possimus eaque accusantium. Ducimus excepturi modi debitis quaerat est delectus eligendi. Saepe obcaecati incidunt nostrum soluta odio, quia temporibus, nulla atque at, qui libero? Quae ex sit consequuntur nihil saepe dolores et iste minima qui sunt similique quidem at excepturi numquam expedita est aliquid perferendis, voluptatum atque voluptatem nulla maiores. Repudiandae, maxime?
-        </p>
-    </div>
-    </div>
+
+
 </body>
+
 </html>
